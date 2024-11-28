@@ -27,6 +27,7 @@
     "@medusajs/cli": "latest",
     "@medusajs/framework": "latest",
     "@medusajs/medusa": "latest",
+    "@medusajs/cache-redis": "^2.0.7",
     "@mikro-orm/core": "5.9.7",
     "@mikro-orm/knex": "5.9.7",
     "@mikro-orm/migrations": "5.9.7",
