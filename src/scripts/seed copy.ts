@@ -201,6 +201,8 @@ export default async function seedDemoData({ container }: ExecArgs) {
               type: "country",
             },
           ],
+        },{name:"",
+          geo_zones:[],
         },
         {
           name: "Belgium",
