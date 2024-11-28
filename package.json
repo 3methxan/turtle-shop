@@ -15,7 +15,7 @@
   "scripts": {
     "build": "medusa build",
     "seed": "medusa exec ./src/scripts/seed.ts",
-    "": "",
+    "start:cloudflare": "medusa build && medusa db:migrate && medusa start",
     "migrate": "medusa db:migrate",
     "start": "medusa start",
     "dev": "medusa develop",
