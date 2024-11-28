@@ -1,4 +1,4 @@
-import { loadEnv, defineConfig } from "@medusajs/framework/utils";
+import { loadEnv, defineConfig, ModuleRegistrationName } from "@medusajs/framework/utils";
 
 import { Module } from "@medusajs/framework/utils";
 
@@ -8,10 +8,7 @@ module.exports = defineConfig({
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     redisUrl: process.env.REDIS_URL,
-    workerMode: process.env.MEDUSA_WORKER_MODE as
-      | "shared"
-      | "worker"
-      | "server",
+    workerMode: process.env.MEDUSA_WORKER_MODE as "worker",
     http: {
       storeCors: process.env.STORE_CORS!,
       adminCors: process.env.ADMIN_CORS!,
@@ -20,29 +17,33 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
   },
-  admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "false" },
+  admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "true" },
 
   modules: [
     {
-      resolve: "@medusajs/cache/cache-redis",
+      resolve: "@medusajs/cache-redis",
+      key: ModuleRegistrationName.CACHE,
       options: {
         redisUrl: process.env.REDIS_URL,
       },
     },
     {
-      resolve: "@medusajs/cache/event-bus-redis",
+      resolve: "@medusajs/event-bus-redis",
+      key: ModuleRegistrationName.EVENT_BUS,
       options: {
         redisUrl: process.env.REDIS_URL,
       },
     },
     {
-      resolve: "@medusajs/cache/cache-redis",
+      resolve: "@medusajs/workflow-engine-redis",
+      key: ModuleRegistrationName.WORKFLOW_ENGINE,
       options: {
         redis: {
           url: process.env.REDIS_URL,
         },
       },
     },
+
     {
       resolve: "@medusajs/medusa/payment",
       options: {
