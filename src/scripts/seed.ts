@@ -99,7 +99,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
     },
   });
   // ### regions
-  logger.info("Seeding region data...");
+  logger.info("Seeding region data.. .");
 
   const { result: regionResult } = await createRegionsWorkflow(container).run({
     input: {
