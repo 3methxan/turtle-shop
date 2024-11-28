@@ -24,3 +24,6 @@ build
 !.yarn/versions
 
 .medusa
+
+/src/scripts/seed copy.ts
+/src/scripts/seed original_.ts
