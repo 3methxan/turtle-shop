@@ -1,4 +1,8 @@
-import { loadEnv, defineConfig, ModuleRegistrationName } from "@medusajs/framework/utils";
+import {
+  loadEnv,
+  defineConfig,
+  ModuleRegistrationName,
+} from "@medusajs/framework/utils";
 
 import { Module } from "@medusajs/framework/utils";
 
@@ -17,7 +21,10 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
   },
-  admin: { disable: process.env.DISABLE_MEDUSA_ADMIN === "false" },
+  admin: {
+    disable: process.env.DISABLE_MEDUSA_ADMIN === "false",
+    backendUrl: process.env.MEDUSA_BACKEND_URL,
+  },
 
   modules: [
     {
