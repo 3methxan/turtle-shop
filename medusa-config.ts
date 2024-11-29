@@ -1,4 +1,8 @@
-import { loadEnv, defineConfig, ModuleRegistrationName } from "@medusajs/framework/utils";
+import {
+  loadEnv,
+  defineConfig,
+  ModuleRegistrationName,
+} from "@medusajs/framework/utils";
 
 import { Module } from "@medusajs/framework/utils";
 
@@ -41,6 +45,22 @@ module.exports = defineConfig({
         redis: {
           url: process.env.REDIS_URL,
         },
+      },
+    },
+
+    {
+      resolve: "@medusajs/medusa/payment",
+      options: {
+        providers: [
+          {
+            id: "stripe",
+            resolve: "@medusajs/medusa/payment-stripe",
+            options: {
+              apiKey: process.env.STRIPE_API_KEY,
+              webhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
+            },
+          },
+        ],
       },
     },
 
