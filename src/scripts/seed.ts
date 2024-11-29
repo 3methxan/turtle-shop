@@ -441,7 +441,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
         name: "Standard Shipping CH",
         price_type: "flat",
         provider_id: "manual_post_at",
-        service_zone_id: fulfillmentSet.service_zones[4].id,
+        service_zone_id: fulfillmentSet.service_zones[3].id,
         shipping_profile_id: shippingProfile.id,
         type: {
           label: "Standard",
