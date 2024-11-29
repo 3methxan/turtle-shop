@@ -12,7 +12,7 @@
     "sourceMap": false,
     "inlineSourceMap": true,
     "outDir": "./.medusa/server/public/admin/",
-    "rootDir": ".",
+    "rootDir": "./",
     "baseUrl": ".",
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
