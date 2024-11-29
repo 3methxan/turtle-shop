@@ -153,7 +153,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
       stock_location_id: stockLocation.id,
     },
     [Modules.FULFILLMENT]: {
-      fulfillment_provider_id: "manual_post_at",
+      fulfillment_provider_id: "manual_manual",
     },
   });
 
@@ -338,7 +338,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
       {
         name: "Standard Shipping AT",
         price_type: "flat",
-        provider_id: "manual_post_at",
+        provider_id: "manual_manual",
         service_zone_id: fulfillmentSet.service_zones[0].id,
         shipping_profile_id: shippingProfile.id,
         type: {
@@ -372,7 +372,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
       {
         name: "Standard Shipping DE LU",
         price_type: "flat",
-        provider_id: "manual_post_at",
+        provider_id: "manual_manual",
         service_zone_id: fulfillmentSet.service_zones[1].id,
         shipping_profile_id: shippingProfile.id,
         type: {
@@ -406,7 +406,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
       {
         name: "Standard Shipping CH LI",
         price_type: "flat",
-        provider_id: "manual_post_at",
+        provider_id: "manual_manual",
         service_zone_id: fulfillmentSet.service_zones[2].id,
         shipping_profile_id: shippingProfile.id,
         type: {
@@ -440,7 +440,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
       {
         name: "Standard Shipping CH",
         price_type: "flat",
-        provider_id: "manual_post_at",
+        provider_id: "manual_manual",
         service_zone_id: fulfillmentSet.service_zones[3].id,
         shipping_profile_id: shippingProfile.id,
         type: {
@@ -908,7 +908,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
           ],
 
           description: "Incredible Shirt. You need one for sure.",
-          handle: "TROOPER-Shirt",
+          handle: "trooper-shirt",
           weight: 400,
           status: ProductStatus.PUBLISHED,
           images: [
