@@ -880,7 +880,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / 5XL / White",
-              sku: "FUUYOU-H-BLACK-4XL",
+              sku: "FUUYOU-H-BLACK-5XL",
               options: {
                 Size: "5XL",
                 Color: "White",
