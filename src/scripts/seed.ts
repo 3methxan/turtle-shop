@@ -796,7 +796,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / M / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-M",
               options: {
                 Size: "M",
                 Color: "White",
@@ -810,7 +810,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / L / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-L",
               options: {
                 Size: "L",
                 Color: "White",
@@ -824,7 +824,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / XL / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-XL",
               options: {
                 Size: "XL",
                 Color: "White",
@@ -838,7 +838,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / 2XL / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-2XL",
               options: {
                 Size: "2XL",
                 Color: "White",
@@ -852,7 +852,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / 3XL / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-3XL",
               options: {
                 Size: "3XL",
                 Color: "White",
@@ -866,7 +866,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / 4XL / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-4XL",
               options: {
                 Size: "4XL",
                 Color: "White",
@@ -880,7 +880,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Hoodie FUUYOU / 5XL / White",
-              sku: "FUUYOU-H-BLACK-S",
+              sku: "FUUYOU-H-BLACK-4XL",
               options: {
                 Size: "5XL",
                 Color: "White",
@@ -929,7 +929,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
           variants: [
             {
               title: "Shirt TROOPER / S / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-s",
               options: {
                 Size: "S",
                 Color: "White",
@@ -943,7 +943,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / M / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-M",
               options: {
                 Size: "M",
                 Color: "White",
@@ -957,7 +957,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / L / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-L",
               options: {
                 Size: "L",
                 Color: "White",
@@ -971,7 +971,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / XL / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-XL",
               options: {
                 Size: "XL",
                 Color: "White",
@@ -985,7 +985,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / 2XL / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-2XL",
               options: {
                 Size: "2XL",
                 Color: "White",
@@ -999,7 +999,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / 3XL / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-3XL",
               options: {
                 Size: "3XL",
                 Color: "White",
@@ -1013,7 +1013,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / 4XL / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-4XL",
               options: {
                 Size: "4XL",
                 Color: "White",
@@ -1027,7 +1027,7 @@ export default async function seedInitialData({ container }: ExecArgs) {
             },
             {
               title: "Shirt TROOPER / 5XL / White",
-              sku: "TROOPER-H-BLACK-S",
+              sku: "TROOPER-H-BLACK-5XL",
               options: {
                 Size: "5XL",
                 Color: "White",
