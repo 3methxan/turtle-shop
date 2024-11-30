@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "medusa build",
-    "build:admin": "medusa-admin build",
+    "build:ish": "medusa build && ln -s .medusa/server/public/ public",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start:cloudflare": "medusa build && medusa db:migrate && medusa start",
     "migrate": "medusa db:migrate",
